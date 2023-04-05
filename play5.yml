@@ -1,0 +1,22 @@
+---
+- name: play5
+  hosts: all
+  become: no
+  
+  tasks:
+  - name: create play5
+    file:
+     path: ~/play5
+     state: directory
+
+  - name: copy project.txt 
+    copy:
+      src: /demo/project.txt
+      dest: ~/play5
+#      remote_src: yes
+  - name: copy project.txt
+    copy:
+      src: /demo/ansible.txt
+      dest: ~/play5
+#      remote_src: yes
+

@@ -1,0 +1,8 @@
+---
+- name: play7
+  hosts: all
+  become: yes
+
+  tasks:  
+   - apt:
+      name: "apache2"

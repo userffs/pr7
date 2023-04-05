@@ -1,0 +1,12 @@
+---
+- name: ping
+  hosts: all
+  become: yes
+
+  tasks:
+   - apt:
+      name: "cowsay"
+   - apt:
+      name: "cmatrix"
+   - apt:
+      name: "mc"

@@ -1,0 +1,8 @@
+---
+- name: play1
+  hosts: all
+  become: no
+  
+  tasks:
+  - debug:
+     var: ansible_facts

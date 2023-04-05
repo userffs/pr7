@@ -1,0 +1,11 @@
+---
+- name: ping
+  hosts: all
+  become: yes
+  tasks:  
+   - name: upg
+     apt:
+      update_cache: yes
+   - name: upgrad
+     apt:
+      upgrade: yes

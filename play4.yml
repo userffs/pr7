@@ -1,0 +1,14 @@
+---
+- name: play4
+  hosts: all
+  become: no
+  
+  tasks:
+  - name: create p21
+    file:
+      path: ~/Prodject21
+      state: directory
+  - name: create a21
+    file:
+      path: ~/Ansible21
+      state: directory

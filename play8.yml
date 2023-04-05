@@ -1,0 +1,9 @@
+---
+- name: play8
+  hosts: all
+  become: yes
+  
+  tasks:
+   - copy:
+      src: /demo/index.html
+      dest: /var/www/html
